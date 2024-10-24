@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>biometrics_app</RootNamespace>
+    <UserSecretsId>9fd1eafe-c7f2-4285-966f-77d7c7499acb</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DPCtlUruNet">
+      <HintPath>..\..\FingerPrintApp\FingerPrintApp\lib\DPCtlUruNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DPCtlXUru">
+      <HintPath>..\..\FingerPrintApp\FingerPrintApp\lib\DPCtlXUru.dll</HintPath>
+    </Reference>
+    <Reference Include="DPUruNet">
+      <HintPath>..\..\FingerPrintApp\FingerPrintApp\lib\DPUruNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DPXUru">
+      <HintPath>..\..\FingerPrintApp\FingerPrintApp\lib\DPXUru.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
